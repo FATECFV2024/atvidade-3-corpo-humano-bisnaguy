@@ -1,30 +1,28 @@
 package main.java;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class App {
-        //Comentário
-
-    public static void funcao_teste (){
-        //Biblioteca para entrada de dados
-        Scanner ler = new Scanner(System.in); 
-
-        //variável local a
-        String v2;
-        int v1;
-
-        System.out.println("Comando de Saida de Dados");
         
-        System.out.printf("Informe uma palavra: ");
-        v2 = ler.next();
-
-        System.out.printf("Informe um número: ");
-        v1 = ler.nextInt();
-
-        System.out.printf(v2+" "+v1);
-    }
     public static void main(String[] args) throws Exception {
-        funcao_teste();
+        Scanner escrita = new Scanner(System.in);
+        escrita.useLocale(Locale.US);
 
+        CorpoHumano c1 = new CorpoHumano(80,60,50,1.65);
+
+        System.out.println("O corpo tem o volume de "+c1.getVolume()+", tem a massa de "+c1.getMassa()+", tem a densidade de "+c1.getDensidade()+" e por fim tem a altura de "+c1.getAltura());
+
+        System.out.println("Quanto você pesa? ");
+        double peso = escrita.nextDouble();
+        c1.setMassa(peso);
+        
+        System.out.println("Qual é a sua altura: ");
+        double altura = escrita.nextDouble();
+        c1.setAltura(altura);
+
+        System.out.println("Seu IMC é "+c1.calcularIMC());
+
+        escrita.close();
 
     }
 }
