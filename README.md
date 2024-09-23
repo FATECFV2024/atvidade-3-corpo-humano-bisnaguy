@@ -33,8 +33,13 @@
 ### Após essa implementação responda:
 
 - Na classe Corpo_Humano inclua a linha c1.massa = "2"; logo depois de instanciar o objeto c1. Qual foi a ocorrência? Qual a conclusão sobre o que aconteceu?
+<b>Resposta: Não foi possível porque estava privado e foi necessário usar um método setter.</b>
+
 - Na classe Corpo_Humano altere a linha private float Massa para public float Massa; Qual foi a ocorrência? Qual a conclusão sobre o que aconteceu?
+<b>Resposta: Depois dessa alteração foi possível acessar a variável sem instanciar o objeto.</b>
+
 - Na classe Corpo_Humano altere a linha public setVolume (float volume) para private setVolume (float volume).Qual foi a ocorrência? Qual a conclusão sobre o que aconteceu?
+<b>Resposta: Não consegui utilizar o setter, sorte que eu tinha atribuido pelo constructor, no teste sem constructor não tinha como acessar pela classe App.</b>
 
 
 <b>Colocar essa informação no Readme do Git ou Em comentários de código na classe main </b>
