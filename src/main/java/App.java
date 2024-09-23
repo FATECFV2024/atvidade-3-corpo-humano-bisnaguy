@@ -8,9 +8,9 @@ public class App {
         Scanner escrita = new Scanner(System.in);
         escrita.useLocale(Locale.US);
 
-        CorpoHumano c1 = new CorpoHumano();
+        CorpoHumano c1 = new CorpoHumano(80,60,50,1.65);
 
-        c1.setVolume()
+        System.out.println("O corpo tem o volume de "+c1.getVolume()+", tem a massa de "+c1.getMassa()+", tem a densidade de "+c1.getDensidade()+" e por fim tem a altura de "+c1.getAltura());
 
         System.out.println("Quanto você pesa? ");
         double peso = escrita.nextDouble();
@@ -22,9 +22,6 @@ public class App {
 
         System.out.println("Seu IMC é "+c1.calcularIMC());
 
-        System.out.println("O corpo tem o volume de "+c1.getVolume()+", tem a massa de "+c1.getMassa()+", tem a densidade de "+c1.getDensidade()+" e por fim tem a altura de "+c1.getAltura());
-
-        
 
         escrita.close();
 
