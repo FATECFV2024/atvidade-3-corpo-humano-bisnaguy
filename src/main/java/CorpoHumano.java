@@ -1,17 +1,17 @@
 package main.java;
 
 public class CorpoHumano {
-    public double massa;
+    private double massa;
     private double volume;
     private double densidade;
     private double altura;
 
-    public CorpoHumano(double massa, double volume, double densidade, double altura){
-        this.massa = massa;
-        this.volume = volume;
-        this.densidade = densidade;
-        this.altura = altura;
-    }
+    // public CorpoHumano(double massa, double volume, double densidade, double altura){
+    //     this.massa = massa;
+    //     this.volume = volume;
+    //     this.densidade = densidade;
+    //     this.altura = altura;
+    // }
 
     public void setMassa(double entMassa){
         massa = entMassa;
@@ -21,7 +21,7 @@ public class CorpoHumano {
         return massa;
     }
 
-    public void setVolume(double entVolume){
+    private void setVolume(double entVolume){
         volume = entVolume;
     }
     public double getVolume(){
