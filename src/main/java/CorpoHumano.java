@@ -1,7 +1,7 @@
 package main.java;
 
 public class CorpoHumano {
-    private double massa;
+    public double massa;
     private double volume;
     private double densidade;
     private double altura;

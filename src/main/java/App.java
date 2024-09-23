@@ -10,6 +10,8 @@ public class App {
 
         CorpoHumano c1 = new CorpoHumano(80,60,50,1.65);
 
+        c1.massa = 15;
+
         System.out.println("O corpo tem o volume de "+c1.getVolume()+", tem a massa de "+c1.getMassa()+", tem a densidade de "+c1.getDensidade()+" e por fim tem a altura de "+c1.getAltura());
 
         System.out.println("Quanto você pesa? ");
